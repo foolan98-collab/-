@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /settings
+
+# Sitemaps
+Sitemap: https://fares-tools.com/sitemap.xml

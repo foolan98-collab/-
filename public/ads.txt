@@ -1,0 +1,3 @@
+# Google AdSense Authorized Digital Sellers (ads.txt) for Fares Tools
+# When your AdSense account is approved, add your verified publisher ID below:
+# Format: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

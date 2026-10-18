@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-arabic: 'Tajawal', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-english: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    --color-primary-blue: #1769FF;
+    --color-strong-blue: #0755E9;
+    --color-light-blue: #EAF3FF;
+    --color-pale-blue: #F5F9FF;
+    --color-main-text: #172B4D;
+    --color-secondary-text: #687A96;
+    --color-border-blue: #DCE7F5;
+    --color-hover-accent: #38A5FF;
+  }
+
+  html,
+  body {
+    font-family: var(--font-arabic);
+    direction: rtl;
+    scroll-behavior: smooth;
+    color: #172B4D;
+    background-color: #F5F9FF;
+    overflow-x: hidden;
+  }
+
+  .font-en {
+    font-family: var(--font-english);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.45s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.delay-75 {
+  animation-delay: 75ms;
+}
+
+.delay-150 {
+  animation-delay: 150ms;
+}
+
+.delay-225 {
+  animation-delay: 225ms;
+}
+
+/* Arabian Horse Animated Emblem Keyframes */
+@keyframes horsePrance {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-1.8px) rotate(-2.5deg);
+  }
+}
+
+@keyframes maneWave {
+  0%, 100% {
+    transform: skewX(0deg) scaleX(1);
+  }
+  50% {
+    transform: skewX(4deg) scaleX(1.04);
+  }
+}
+
+@keyframes badgeShimmer {
+  0% {
+    transform: translateX(120%) rotate(25deg);
+  }
+  35%, 100% {
+    transform: translateX(-140%) rotate(25deg);
+  }
+}
+
+.animate-horse-prance {
+  transform-origin: 50% 75%;
+  animation: horsePrance 3.2s ease-in-out infinite;
+}
+
+.animate-mane-wave {
+  transform-origin: 65% 40%;
+  animation: maneWave 2.4s ease-in-out infinite;
+}
+
+.animate-badge-shimmer {
+  animation: badgeShimmer 4.5s ease-in-out infinite;
+}
+
+/* Hide scrollbar for horizontal pill bar on mobile while keeping scroll functional */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.reduce-motion *,
+.reduce-motion ::before,
+.reduce-motion ::after {
+  animation-duration: 0.01ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important;
+  scroll-behavior: auto !important;
+}
+
+.reduce-motion .animate-fade-in-up,
+.reduce-motion .animate-horse-prance,
+.reduce-motion .animate-mane-wave,
+.reduce-motion .animate-badge-shimmer {
+  animation: none !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .animate-fade-in-up,
+  .animate-horse-prance,
+  .animate-mane-wave,
+  .animate-badge-shimmer {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

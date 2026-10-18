@@ -1,0 +1,6 @@
+{
+  "name": "Fares Tools | فارس TOOLS",
+  "description": "أدوات مجانية لتحويل ملفاتك وتعديل مستنداتك وصورك بسهولة.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fares Tools | فارس TOOLS - أنجز أكثر. بخطوات أقل.</title>
+    <meta name="description" content="أدوات مجانية لتحويل ملفاتك وتعديل مستنداتك وصورك بسهولة. منصة فارس تولز المتكاملة لملفات PDF والصور والفيديو والصوت والكتابة العربية." />
+    <meta name="google-site-verification" content="googlebf62990c20d47176" />
+    <link rel="canonical" href="https://fares-tools.com/" />
+
+    <!-- PWA Web App Manifest & Mobile Integration -->
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#1769FF" />
+    <meta name="application-name" content="Fares Tools" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Fares Tools" />
+
+    <!-- Favicons & App Icons (Google Search, Browser Tabs, iOS, Android) -->
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/icon-96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <meta property="og:title" content="Fares Tools | فارس TOOLS - أنجز أكثر. بخطوات أقل." />
+    <meta property="og:description" content="أدوات مجانية لتحويل ملفاتك وتعديل مستنداتك وصورك بسهولة. منصة فارس تولز المتكاملة لملفات PDF والصور والفيديو والصوت والكتابة العربية." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://fares-tools.com/" />
+    <meta property="og:image" content="https://fares-tools.com/fares-tools-full-logo.png" />
+    <meta property="og:site_name" content="Fares Tools | فارس TOOLS" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Fares Tools | فارس TOOLS - أنجز أكثر. بخطوات أقل." />
+    <meta name="twitter:description" content="أدوات مجانية لتحويل ملفاتك وتعديل مستنداتك وصورك بسهولة." />
+    <meta name="twitter:image" content="https://fares-tools.com/fares-tools-full-logo.png" />
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Fares Tools | فارس TOOLS",
+      "url": "https://fares-tools.com",
+      "image": "https://fares-tools.com/icon-512.png",
+      "logo": "https://fares-tools.com/fares-tools-full-logo.png",
+      "description": "منصة عربية متكاملة توفر 40 أداة لمعالجة وتعديل وتحويل مستندات PDF والصور والفيديو والصوت والنصوص العربية وإزالة العلامات المائية وحاسبة الزكاة محلياً في المتصفح.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "inLanguage": "ar",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet" />
+  </head>
+  <body class="bg-[#F5F9FF] text-[#172B4D] antialiased selection:bg-[#1769FF] selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker.register('/sw.js', { scope: '/' })
+            .then(function(registration) {
+              registration.onupdatefound = function() {
+                var installingWorker = registration.installing;
+                if (installingWorker) {
+                  installingWorker.onstatechange = function() {
+                    if (installingWorker.state === 'installed' && navigator.serviceWorker.controller) {
+                      console.log('[SW] New version ready.');
+                    }
+                  };
+                }
+              };
+            })
+            .catch(function(err) {
+              console.warn('[SW] Registration failed:', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
+

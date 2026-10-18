@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1769FF" />
+      <stop offset="55%" stop-color="#0755E9" />
+      <stop offset="100%" stop-color="#053BA6" />
+    </linearGradient>
+    <linearGradient id="maneGrad" x1="34" y1="10" x2="56" y2="54" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="50%" stop-color="#38A5FF" />
+      <stop offset="100%" stop-color="#BAE6FD" />
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#shieldGrad)" />
+  <circle cx="32" cy="32" r="25" stroke="#FFFFFF" stroke-opacity="0.18" stroke-width="1.2" />
+  <g>
+    <path d="M35 12C43 13 51 18 53 25C48 24 44 25 41 28C48 29 53 34 54 41C49 39 45 40 42 43C46 45 49 49 49 54H36L35 12Z" fill="url(#maneGrad)" opacity="0.92" />
+    <path d="M37 17C44 19 49 23 50 28C45 27 42 28 39 31" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" opacity="0.7" />
+    <path d="M43 54H20.5C21.5 46.5 24.5 40.5 28.5 36.5C29.5 35.5 29.2 34 27.8 33.8C23.2 33.4 18.8 35.2 15.5 35.2C12.8 35.2 10.5 33.2 10.5 30.4C10.5 28.6 11.6 27 13.2 25.8C16.2 23.5 18.2 20.2 19.8 16.5L22.5 9.5L25.8 14.2L29.5 8.5L31.2 14.8C38.5 19.2 43.5 28.5 44 39.5C44.2 44.8 43.6 49.8 43 54Z" fill="#FFFFFF" />
+    <path d="M20.5 22.2C21.8 21.4 23.6 21.6 24.5 22.8C23.2 23.5 21.5 23.3 20.5 22.2Z" fill="#0755E9" />
+    <circle cx="14.2" cy="30.2" r="1.2" fill="#0755E9" />
+    <path d="M15.5 32.2C20.5 31.2 25.5 28.8 29.5 24.5" stroke="#38A5FF" stroke-width="1.6" stroke-linecap="round" />
+  </g>
+  <rect x="18" y="55.5" width="28" height="2.8" rx="1.4" fill="#38A5FF" />
+</svg>
